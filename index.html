@@ -3,25 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro e Inicio de Sesión</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mi Página de Juegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .game-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .game-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+        .game-card h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Registro</h1>
-        <form action="register.php" method="POST">
-            <input type="text" name="username" placeholder="Nombre de usuario" required>
-            <input type="email" name="email" placeholder="Correo electrónico" required>
-            <input type="password" name="password" placeholder="Contraseña" required>
-            <button type="submit">Registrarse</button>
-        </form>
 
-        <h1>Iniciar Sesión</h1>
-        <form action="login.php" method="POST">
-            <input type="text" name="username" placeholder="Nombre de usuario" required>
-            <input type="password" name="password" placeholder="Contraseña" required>
-            <button type="submit">Iniciar Sesión</button>
-        </form>
+    <header>
+        <h1>Mi Página de Juegos</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Categorías</a>
+        <a href="#">Subir Juego</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <!-- Tarjeta de Juego 1 -->
+        <div class="game-card">
+            <img src="ruta_al_juego_1.jpg" alt="Juego 1">
+            <h3>Juego 1</h3>
+            <p>Descripción breve del juego.</p>
+        </div>
+
+        <!-- Tarjeta de Juego 2 -->
+        <div class="game-card">
+            <img src="ruta_al_juego_2.jpg" alt="Juego 2">
+            <h3>Juego 2</h3>
+            <p>Descripción breve del juego.</p>
+        </div>
+
+        <!-- Tarjeta de Juego 3 -->
+        <div class="game-card">
+            <img src="ruta_al_juego_3.jpg" alt="Juego 3">
+            <h3>Juego 3</h3>
+            <p>Descripción breve del juego.</p>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Mi Página de Juegos. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
